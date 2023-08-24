@@ -19,16 +19,27 @@
 }
 
 .logo{
-    font-size: 20px;
+    font-size: 30px;
     color: green;
     text-decoration: none;
     font-weight: 700;
 }
 
-.navbar{
+.navbar a {
     font-size: 18px;
     color: white;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color:blueviolet;
+} 
+
+.home{
+    height: 100vh;
+    background: linear-gradient(-90 deg, darkblue 65%, white 35%);
 }
