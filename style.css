@@ -11,7 +11,7 @@
     left: 0;
     width:100%;
     padding: 20px 10%;
-    background: transparent;
+    background: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,7 +20,7 @@
 
 .logo{
     font-size: 25px;
-    color: #000033;
+    color: white;
     text-decoration: none;
     font-weight: 700;
     margin-left: -120px;
@@ -143,7 +143,7 @@ home-content{
     margin-top: 40px;
     margin-left: 45px;
     padding: 12px 40px;
-    background: #90CAF9 ;
+    background: #4FC3F7 ;
     border-radius: 40px;
     font-size: 18px;
     color: #000033;
@@ -155,8 +155,202 @@ home-content{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.btn: hover{
-    background: #EC071B;
-    color: white;
+.btn :hover{
+    color: red;
     box-shadow: none;
 }
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    align-items: center;
+    font-size: 20px;
+    background: url(aboutme.jpg);
+    background-size: cover;
+}
+
+.about-me{
+    margin-left: 30px;
+    color: white;
+    margin-top: 30px;
+}
+
+.about-me p{
+    text-align: justify;
+    margin-top: 20px;
+    color:khaki;
+    margin-right: 150px;
+    margin-left: 30px;
+    font-family: Times, Times New Roman, serif;
+    line-height: 1.5;
+    font-size: 22px;
+}
+
+.about h1{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: #FF1509;
+    margin-top: -30px;
+    margin-left: 250px;
+    text-shadow: 4px 4px black;
+} 
+
+.about h2{
+    font-style: bold;
+    font-style: oblique;
+    color:#FFEE58 ;
+    margin-left: 30px;
+    font-family: Snell Roundhand, cursive;
+}
+
+.about a{
+    margin-left: 720px;
+    margin-top: 30px;
+    background: #B0BEC5;
+    color: black;
+}
+ .about a:hover{
+    color: red;
+    box-shadow: none;
+    background: black;   
+ }
+
+ .about-me i{
+    color: yellow;
+ }
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(bg.jpg);
+    background-size: cover;
+}
+
+.contact-me h1{
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: #FF66CC;
+    text-shadow: 4px 4px black;
+    margin-left: -450px;
+    font-size: 30px;
+    margin-top: 60px;
+}
+
+.contact p {
+    color: white;
+    font-size: 15px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container .contact-info{ 
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.icon{
+    min-width: 60px;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 25px;
+    margin-left: -50px;
+}
+
+.text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #FF1509;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.box h3{
+    color: #42A5F5 ;
+    font-family: Noto Sans, sans-serif;
+}
+
+.contact-form{
+    width: 35%;
+    height: 70%;
+    padding: 40px;
+    background: #E8EAF6;
+    margin-left: -100px;
+}
+
+.contact-form h2{
+    font-size: 20px;
+    color: #000066;
+    font-weight: 500;
+}
+
+.inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.inputbox input,
+.inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid gray;
+    outline: none;
+    resize:none;
+}
+
+.inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: .5s;
+    color: black;
+}
+
+.contact-form .inputbox input:focus ~ span,
+.contact-form .inputbox input:valid ~ span,
+.contact-form .inputbox textarea:focus ~ span,
+.contact-form .inputbox textarea:valid ~ span{
+    color: #FF1509;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contact-form .inputbox input[type="submit"]{
+    width: 100px;
+    background: #33FF00;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 115px;
+}
+
