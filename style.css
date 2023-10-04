@@ -155,8 +155,9 @@ home-content{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.btn :hover{
-    color: red;
+.home-content .btn:hover{
+    color: white;
+    background-color: blue;
     box-shadow: none;
 }
 
